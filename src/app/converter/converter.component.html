@@ -1,0 +1,26 @@
+<div class="container">
+    <div>
+      <h4>Міняю</h4>
+      <input type="number" [(ngModel)]="curentValue" (ngModelChange)="changeHandlerGive()">
+      <select (change)="changeCurencyGive($event)">
+        <option>Не вибрано</option>
+        <option >EUR</option>
+        <option >USD</option>
+        <option >UAH</option>
+      </select>
+    </div>
+    <div>
+      <h4>Отримую</h4>
+      <input type="number" [(ngModel)]="outValue" (ngModelChange)="changeHandlerGet()">
+      <select (change)="changeCurencyGet($event)">
+        <option>Не вибрано</option>
+        <option>EUR</option>
+        <option>USD</option>
+        <option>UAH</option>
+      </select>
+    </div>
+  </div>
+
+
+
+
